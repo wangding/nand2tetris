@@ -1,5 +1,5 @@
 from nand import Nand
-from no import Not
+from p1_not import Not
 
 def And(x, y):
   '''

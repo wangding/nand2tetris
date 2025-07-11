@@ -1,6 +1,6 @@
-from no import Not
-from ad import And
-from oor import Or 
+from p1_not import Not
+from p2_and import And
+from p3_or  import Or 
 
 def Xor(x, y):
   '''

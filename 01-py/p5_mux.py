@@ -1,6 +1,6 @@
-from ad import And
-from no import Not
-from oor import Or
+from p2_and import And
+from p1_not import Not
+from p3_or  import Or
 
 def Mux(x, y, sel):
   '''

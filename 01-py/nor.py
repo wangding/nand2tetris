@@ -1,5 +1,5 @@
-from no import Not
-from oor import Or
+from p1_not import Not
+from p3_or import Or
 
 def Nor(x, y):
   '''

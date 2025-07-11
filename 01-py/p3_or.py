@@ -1,5 +1,5 @@
-from no import Not
-from ad import And
+from p1_not import Not
+from p2_and import And
 
 def Or(x, y):
   '''
