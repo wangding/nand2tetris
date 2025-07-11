@@ -1,5 +1,5 @@
 from p1_not import Not
-from p2_and import And
+from nand import Nand
 
 def Or(x, y):
   '''
@@ -12,4 +12,4 @@ def Or(x, y):
   >>> Or(1, 1)
   1
   '''
-  return Not(And(Not(x), Not(y)))
+  return Nand(Not(x), Not(y))
