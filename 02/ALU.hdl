@@ -64,7 +64,7 @@ CHIP ALU {
 
     // if (no == 1) set out = !out
     Not16(in=outxy, out=noutxy);
-    Mux16(a=outxy, b=noutxy, sel=no, out=out, out[0..7]=olow, out[8..15]=ohigh, out[15]=ong);
+    Mux16(a=outxy, b=noutxy, sel=no, out=out, out[0..7]=olow, out[8..15]=ohigh, out[15]=ng);
 
     // zr 1 if (out == 0), 0 otherwise
     Or8Way(in=olow, out=orlow);
@@ -73,7 +73,7 @@ CHIP ALU {
     Not(in=ozr, out=zr);
     
     // if (out < 0) set ng = 1
-    And(a=ong, b=true, out=ng);
+    //And(a=ong, b=true, out=ng);
 }
 
 
