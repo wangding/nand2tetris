@@ -11,4 +11,38 @@
 // "white" in every pixel;
 // the screen should remain fully clear as long as no key is pressed.
 
-// Put your code here.
+// addr = @SCREEN base address
+@SCREEN
+D=A
+@addr
+M=D
+
+// (LOOP)
+(LOOP)
+
+//    if addr - @SCREEN - 100 = 0 then Goto END
+@addr
+D=M
+@SCREEN
+D=D-A
+@100
+D=D-A
+@END
+D;JEQ
+
+//    set addr color black
+@addr
+A=M
+M=1
+
+//    addr = addr + 1
+@addr
+M=M+1
+
+// Goto LOOP
+@LOOP
+0;JMP
+
+(END)
+@END
+0;JMP
